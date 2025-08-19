@@ -22,4 +22,5 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'destroy'
+    commandOptions: '-auto-approve'
     environmentServiceNameAzureRM: 'few'
