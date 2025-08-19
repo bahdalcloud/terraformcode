@@ -13,5 +13,8 @@ steps:
 - task: TerraformTask@5
   inputs:
     provider: 'azurerm'
-    command: 'destroy'
-    environmentServiceNameAzureRM: 'few'
+    command: 'init'
+    backendServiceArm: 'few'
+    backendAzureRmStorageAccountName: 'ausvic'
+    backendAzureRmContainerName: 'tfstate'
+    backendAzureRmKey: 'terraform.tfstate'
